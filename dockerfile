@@ -11,7 +11,7 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # Expose Flask port
-EXPOSE 5000
+EXPOSE 5001
 
 # Run Flask app
 CMD ["python", "app.py"]
