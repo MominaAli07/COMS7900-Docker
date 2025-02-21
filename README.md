@@ -13,7 +13,7 @@ services:
   flask-app:
     image: momina07/flask-calculator:latest  # Using our Docker Hub image
     ports:
-      - "5000:5000"
+      - "8082:5001"
     volumes:
       - .:/app
     environment:
