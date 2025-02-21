@@ -1,4 +1,3 @@
-````markdown
 # Flask Calculator App
 
 This repository contains a Flask-based calculator application that can be deployed using Docker or Singularity (Apptainer).
