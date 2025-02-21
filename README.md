@@ -24,7 +24,7 @@ services:
 To build and run the container, execute the following command in your terminal:
 
 ```bash
-docker-compose up --d
+docker-compose up -d
 ```
 
 ## Docker Hub Container
