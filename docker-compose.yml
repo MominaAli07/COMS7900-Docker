@@ -1,12 +1,10 @@
-version: "3.8"
-
 services:
   flask-app:
+    build: 
+        context: "https://github.com/MominaAli07/COMS7900-Docker.git"
     image: momina07/flask-calculator:latest  # Using our Docker Hub image
     ports:
-      - "8082:5001"
-    volumes:
-      - .:/app
+      - "5001:5001"
     environment:
       - FLASK_ENV=development
     restart: always  # Automatically restarts the container if it stops
