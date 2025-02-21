@@ -7,15 +7,14 @@ This repository contains a Flask-based calculator application that can be deploy
 A `docker-compose.yml` file is provided to set up your application container using the image hosted on Docker Hub.
 
 ```yaml
-version: "3.8"
 
 services:
   flask-app:
+    build:
+        context: "https://github.com/MominaAli07/COMS7900-Docker.git"
     image: momina07/flask-calculator:latest  # Using our Docker Hub image
     ports:
-      - "8082:5001"
-    volumes:
-      - .:/app
+      - "5001:5001"
     environment:
       - FLASK_ENV=development
     restart: always  # Automatically restarts the container if it stops
@@ -24,7 +23,7 @@ services:
 To build and run the container, execute the following command in your terminal:
 
 ```bash
-docker-compose up -d
+docker-compose up --build
 ```
 
 ## Docker Hub Container
