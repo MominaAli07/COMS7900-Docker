@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  flask-app:
+    image: momina07/flask-calculator:latest  # Use the Docker image from Docker Hub
+    ports:
+      - "5000:5000"
+    restart: always  # Ensures the container restarts if it stops
+
