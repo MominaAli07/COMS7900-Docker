@@ -51,4 +51,4 @@ apptainer exec flask-calculator.sif python3 /app/app.py
 - **Docker Hub:** The image on Docker Hub serves as the source for the Docker container. Anyone can pull and run this image using Docker.
 - **Singularity (Apptainer):** The SIF file allows you to run the containerized application using Apptainer, providing an alternative to Docker.
 
-Feel free to open issues or submit pull requests if you have suggestions or improvements.
+
